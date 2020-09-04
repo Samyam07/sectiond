@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Signup</title>
+</head>
+<body>
+	<form name="login" method="post" action="#"><!--action =# as we don't have a url, using the post method, the password'll not be shown in the website layer-->
+		<fieldset>
+			<legend>Login</legend>
+			<input type="text" name="username" placeholder="username"/>
+			<br/>
+			<input type="password" name="password" placeholder="password">
+			<!--using the placeholder'll show what to write in 50% opacity-->
+			<br/>
+			<input type="submit" name="submit" value="Login">
+			<!--this value is what'll appear in the button-->
+		</fieldset>
+	</form>
+	<br/>
+	<h1>Sign Up</h1>
+	<form action="#" method="POST" name="signup" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Sign Up</legend>
+			<table border=0 cellpadding="5" cellspacing="5" width="75%">
+				<tr>
+					<td><label>Full Name</label></td>
+					<td><input type="Text" name="fullname" size="30" maxlength="50" placeholder="full name" required="required" />
+					<!--this required will say error to fill out the field incase the user tries to send without typing anything-->
+					</td>
+				</tr>
+				<tr>
+					<td><label>Email Address</label></td>
+					<td><input type="email" name="email" placeholder="you@domain.com" size="30" maxlength="50" required /> </td
+>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<input type="radio" name="gender" value="M" checked="checked">Male
+						<input type="radio" name="gender" value="F"/>Female
+						<input type="radio" name="gender" value="O"/>Others
+						<!--the reason why we have the same name for all 3 genders i.e name="gender" is because the user is to only choose one option and the value written here i.e M,F or O will be sent to the server-->
+					</td>
+				</tr>
+				<tr>
+					<td>Courses
+					</td>
+					<td>
+						<input type="checkbox" name="php" value="php" checked/>Php
+						<input type="checkbox" name="java"/>Java
+						<input type="checkbox" name="asp"/>Asp
+					</td>
+				</tr>
+				<tr>
+					<td>Country where you are from</td>
+					<td>
+						<select name="country" size="1">
+							<!--we can write multiple=multiple if we can choose two countries from the drop down menu-->
+							<option value="">--Choose--</option>
+							<option value="NP">Nepal</option>
+							<option value="IN">India</option>
+							<option value="BA">Bangladesh</option>
+                            <option value="MA">Maldives</option><!--like if you want to show maldives, you can write selected="selected" to show that Maldives is a default value-->
+                            <option value="K">Korea</option>
+                            <option value="J">Japan</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Photo</td>
+					<td>
+					<input type="file" name="photo"/>
+					<!--whenever we write input type="file" we have to add enctype="....." in the form above-->
+					</td>
+				</tr>
+				<tr>
+					<td>DOB</td>
+					<td><input type="date" name="dob" placeholder="mm/dd/yyyy"/>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td>
+					<textarea rows="13" cols="40" name="message"></textarea>
+				</td>
+			</tr>
+				<tr>
+					<td>
+						<input type="submit" name="submit" value="Send"/>
+						<input type="reset" name="reset" value="Clear"/>
+					</td>
+				</tr>
+			</table> 
+		</fieldset>
+</body>
+</html>
