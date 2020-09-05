@@ -4,11 +4,38 @@
 	<title>My new site layout by CSS</title>
 	<!--attaching external style sheet-->
 	<link rel="stylesheet" type="text/css" href="css/style.css"/><!--link is also a singular tag-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 </head>
 <body>
 	<div id="container">
-		<h1>Welcome to the site</h1>
-	<p class="mypara">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<div class="box">
+			<h2>This is box example</h2>
+		</div>
+		<h1>Welcome to the <em>site</em></h1>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a>
+					<ol>
+						<li><a href="#">Design</a></li>
+						<li><a href="#">Development</a></li>
+					</ol>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		<h1>This is heading of level1</h1>
+		<h2>This is heading of level2</h2>
+		<h3>This is heading of level3</h3>
+	<br/>
+	<p class="mypara">
+		<img src="images/5.png" alt="new pic" title="scene cut" class="radiusimg" align="right"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
