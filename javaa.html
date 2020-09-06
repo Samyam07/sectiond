@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Displaying Text</title>
+	<script type="text/javascript">
+	/*	num1=prompt("Enter the first number: ");
+		num2=prompt("Enter the second number: ");
+
+		alert("The sum of " +num1+" and" +num2+" is: " + num1+num2);
+
+		//but when we use parseInt
+		n1=parseInt(prompt("Enter the first number: "));
+		n2=parseInt(prompt("Enter the second number: "));
+		sum=n1+n2;
+
+		alert("The sum of "+n1+" and"+n2+" is: "+sum);
+		
+			#Author: Samyam Samba
+			the purpose of the program, we must always write the author name and the purpose of the program in javascript
+
+		//the third kind of box(confirm)
+		var userinput;
+		userinput=confirm("Are u sure u want to close this page?");
+		if(userinput==true){
+			window.close();
+		}
+		else{
+
+		}
+		
+		var n1=10;
+		var n2=30;
+		if(n1==n2){
+			document.write(n1+" and "+n2+"are Equal");
+		}
+		else if(n2>n1){
+				document.write(n2+" is greater than "+n1);
+		}
+		else{
+			document.write(n1+" is greater than "+n2);
+		}
+
+		var n=parseInt(prompt("Enter a number"));
+		document.write("You entered: "+n+"<br/>");
+		console.log("Youu entered: "+n);
+		//when we use console, it'll not appear on website rather'll be shown when inspected in the console section, it's main purpose is to assist in debugging
+		if(n>0)
+			document.write("Greater than 0");
+		else if(n<0)
+			document.write("less than 0");
+		else
+			document.write("Equals 0");
+		
+
+		//switch case
+		var day="Tuesday";
+		switch(day){
+			case "Sunday":
+			{
+				document.write("Today is holiday");
+				break;
+			}
+			case "Monday":
+			{
+				document.write("You have a class today");
+				break;
+			}
+			case "Tuesday":
+			{
+				document.write("Today is Tuesday, the D-day");
+				break;
+			}
+			default:
+			{
+				document.write("Day? please");
+				break;
+			}
+		}
+		//loop
+		var count=1;
+		document.write("Loop started: ");
+		while(count<=10){
+			document.write("<br/>"+count);
+			//count++;
+			count=count+1;
+		}
+		document.write("<br/>Loop Ended: ");
+
+		//do while
+		var count=1;
+		do{
+			document.write("<br/>Count is: "+count);
+			count++;
+		}while(count<=10);
+
+		//for loop
+		for(i=10;i=>1;i--){
+			document.write("<br/>Count is: "+i);
+		}*/
+
+		for(i=1;i<=5;i++){
+			for(j=1;j<=i;j++){
+				document.write(" * ");
+			}
+			document.write("<br/>");
+		}
+		document.write("<br/><br/><br/>");
+
+		var kpop= new Array("BTS","SVT","ATEEZ","TXT");
+		document.write(kpop[0]+" kpop<br/><br/>");
+		document.write(kpop[1]+"  kpop<br/><br/>");
+		document.write(kpop[2]+"  kpop<br/><br/>");
+		document.write(kpop[3]+"  kpop<br/><br/>");
+		var count=kpop.length;
+		for(i=0;i<count;i++){
+			document.write("<br/><br/>index ["+i+"] contains "+kpop[i]+"<br/>");
+		}
+		var myText="Javascript";
+		document.write("<br/>"+myText.length);
+		document.write("<br/>"+myText.charAt(4));
+		document.write("<br/>"+myText.indexOf("vas"));
+		document.write("<br/>"+myText.substr(0,4));
+		document.write("<br/>"+myText.substr(-5));//from right
+		document.write("<br/>"+myText.toUpperCase());
+		document.write("<br/>"+myText.toLowerCase());
+		document.write("<br/>"+myText.length);
+	</script>
+</head>
+<body>
+	<script type="text/javascript" src="scripts/my.js">
+		document.write("<h1>Hello good day</h1>");
+		document.write("<h3>Best of Luck</h3>");
+	</script>
+</body>
+</html>
