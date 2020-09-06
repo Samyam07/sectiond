@@ -1,0 +1,193 @@
+/* Universal Selector */
+*{margin:0; padding:0;}
+
+/* Class Selector */
+.mypara{
+	color:#ff0000;
+}
+
+.radiusimg{
+	border-radius: 0px 30px 0px 30px;
+	border-bottom: 3px double #cccccc;
+	border-right: 3px solid #bbbbbb;
+	width: 250px;
+}
+
+/*ID selector*/
+#container{
+	width:1140px;
+	min-height:1400px;
+	margin:auto auto;/*this means center align*/
+	background-color:#eeeeee;
+	background-right:5px double #ff0000;
+	border: 5px dashed #99ff00;
+	border-radius: 0px 40px 0px 40px;
+}
+
+
+.box{
+	width:250px;
+	float:left;
+	min-height:200px;
+	background-image: url('../images/animated.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;/*by default, the background attachment is scroll i.e the background gets scrolled as well*/
+}
+
+.banner{
+	background-image: url('../images/16.png');
+	background-repeat: no-repeat;
+	width:100%;
+	min-height:150px;
+}
+
+/*TYPE Selector*/
+h1{
+	color:#00ff00;
+	font-variant:small-caps;
+	font-family: 'Dancing Script';
+}
+
+/*body{background-color: #cccccc;}*/
+body{
+background-color: #dddddd;
+font-family: 'Lobster';
+}/*incase the picture is too small, this helps it to cover the entire area*/
+
+/* Descendants selector*/
+h1 em{color:green;}
+
+ul.menu{padding:0; list-style: none;}/*the none 'll show neither bullets or numbers*/
+
+ul.menu li{display: inline;}/*this inline'll show home, about, services and contact in the same line*/
+
+ul.menu li a {margin: 10px; text-decoration:none;}
+
+/*child selector*/
+ul>li {list-style: square;}
+ul>li ol {list-style: none;}
+
+/*Grouping selector*/
+h1,h2,h3{font-weight:normal;}
+
+/*type selector type*/
+/*but while actually making the website, the comments are written as to why the certain code is written*/
+h1{font-size: 36px;}
+h2{font-size: 28px;}
+
+h3{font-size: 22px;}
+
+.row{min-height:10px;}
+
+.col100{width:100%;}
+.col75{width:75%; float:left;}
+.col25{width:25%; float:left;}
+.col50{width:50%; float:left;}
+.col33{width:33%; float:left;}
+
+.clear{clear:both;}/*we need to clear because we used float above*/
+
+@media screen and (min-width:480px){
+	body{
+		background-color: red;
+	}
+	h1{font-size:16px;}
+}
+
+@media screen and (min-width:768px){
+	body{
+		background-color: green;
+	}
+	h1{font-size:20px;}
+}
+
+@media screen and (min-width:1160px){
+	body{
+		background-color: yellow;
+	}
+	h1{font-size:30px;}
+}
+
+ul{
+padding:0; 
+list-style:none;/*it's neither ordered nor unordered list*/
+background:#f2f2f2; 
+float:right;
+}
+
+ul li{display: inline-block;}
+ul li a{
+display: block;
+padding: 10px 25px;
+color: #333;
+text-decoration: none;
+}/*so that the underline is not there*/
+
+ul li a:hover{color: #000;
+background:#939393;
+text-decoration: underline;
+}
+
+ul li a:link{color:red;}
+ul li a:visited{color:green;}
+ul li a:active{color: blue;}
+
+.myhoverimg:hover{
+	opacity:1;
+	border-right:4px solid #dddddd;
+	border-bottom:4px solid #dddddd;
+}
+
+img{
+	opacity:0.7;
+}
+
+#social{/*you can make class selector if you like*/
+	position: fixed;
+	top:250px;
+	right:0px;
+	width:25px;
+	min-height:75px;
+	background-color: #ff0000;
+}
+
+#social ul{/*these are for those fixed small fb, twitter logos in website*/
+	list-style-type: none;
+}
+
+#social ul li{
+	margin:5px;
+	color:#000000;
+	display: block;
+}
+
+#social ul li:hover{
+	background-color: #aaaaaa;
+	color:#ffccff;
+} 
+
+#social ul li i{
+	font-size:20px;
+	font-weight: bolder;
+}
+
+.box1{
+	background-color: red;
+	width: 300px;
+	height: 300px;
+	position: relative;/*it means it starts from 0px*/
+	top:5px;
+	z-index:9998;
+	overflow:scroll;/*using overflow:auto'll also help*/
+}
+
+.circle{
+	width:300px;
+	border-radius: 50%;
+	background-color:green;
+	height:300px;
+	top:25px;
+	postion: relative;
+	z-index:9999;
+}
+

@@ -1,0 +1,63 @@
+.banner{
+	background-image: url('../images/16.png');
+	background-repeat: no-repeat;
+	width:100%;
+	min-height:150px;
+}
+.imgresponsive{
+	width:100%;
+	height:auto;
+}
+
+.circlimg{
+	border-radius:50%;
+	border:1px groove #dddddd;
+}
+
+.row{min-height: 10px}
+.col100{width:100%;}
+.col75{width:75%; float:left;}
+.col25{width:25%; float:left;}
+.col50{width:50%; float:left;}
+.col33{width:33%; float:left;}
+.clear{clear:both;}
+
+@media screen and (max-width:768px){
+	body{
+		background-color: green;
+	}
+	h1{font-size:20px;}
+	#container{
+		width:740px;
+		min-height: 900px;
+	}
+	.colmd100{width:100%;}
+.colmd75{width:75%; float:left;}
+.colmd25{width:25%; float:left;}
+.colmd50{width:50%; float:left;}
+.colmd33{width:33%; float:left;}
+banner{width:740px;}
+
+@media screen and (max-width:480px){
+	body{
+		background-color: red;
+	}
+	h1{font-size:16px;}
+	#container{
+		width:450px;
+		min-height: 500px;
+	}
+	.colsm100{width:100%;}
+.colsm75{width:75%; float:left;}
+.colsm25{width:25%; float:left;}
+.colsm50{width:50%; float:left;}
+.colsm33{width:33%; float:left;}
+.banner{width:450px;}
+}
+
+@media screen and (min-width:1160px){
+	body{
+		background-color: yellow;
+	}
+	h1{font-size:30px;}
+}

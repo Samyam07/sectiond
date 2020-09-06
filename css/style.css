@@ -19,8 +19,9 @@
 	min-height:1400px;
 	margin:auto auto;/*this means center align*/
 	/*background-color: #eeeeee;*/
-	background-image: url('../images/16.png');
-	background-repeat: no-repeat;
+	/*background-image: url('../images/16.png');
+	background-repeat: no-repeat;*/
+	background-color: #33cc00;
 	border: 5px dashed #99ff00;
 	border-radius: 0px 40px 0px 40px;
 }
@@ -71,3 +72,10 @@ h1{font-size: 36px;}
 h2{font-size: 28px;}
 
 h3{font-size: 22px;}
+
+.banner{
+	background-image: url('../images/16.png');
+	background-repeat: no-repeat;
+	width:100%;
+	min-height:150px;
+}
