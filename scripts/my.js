@@ -38,4 +38,32 @@ function f4(n1,n2) {//Even a slight space f4(n1, n2) can give errors
 	var sum=n1+n2;
 	return sum;
 }
+/*
+//java global functions
+var x=eval("50")*8;//if you don't write eval , the result will be 508 as it takes 50 as a string
+alert(x);
+
+if(isNaN("x56")){
+	alert("not a number");
+}
+else{
+	alert("it's a number");
+}
+*/
+var d = new Date();
+var y = d.getFullYear();
+var m = d.getMonth()+1;
+var da = d.getDate();
+var day = d.getDay()+1;
+if(day==1){
+	day="Sunday";
+}
+else if(day==2){
+	day="Monday";
+}
+else{
+	day="Wrong input";
+}
+document.getElementById("currentTime").innerHTML = "Date: "+day+", "+da+" "+m+" "+y;
+//this getElementById and inner.HTML are system-defined in built....
 

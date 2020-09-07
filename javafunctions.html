@@ -2,15 +2,105 @@
 <html>
 <head>
 	<title>Javascript functions</title>
+</head>
+<body onload="clockStart()" onUnload="goodbye()"><!--this is what'll start the clock-->
+	<div id = "currentTime" style="float:right; border:2px solid #ffcc33; width:250px;">
+	</div>
+	<div id="clock" onmouseover="over()" onmouseout="out()">
+<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
+</div>
+	<button name="Sum" onclick="sumTwo()">SUM</button>
+	<a href="https://www.google.com/">Google</a>
+
+	<button onclick="changeBgColor()">Change color</button>
+
+	<form><input type="text"
+		onFocus="message('one-line text')">
+	<textarea rows=2 cols=20 wrap=virtual onFocus="message('multiple-line text')">
+	</textarea>
+	<select onFocus="message('Field of choice')">
+		<option>Point1</option>
+		<option>Point2</option>
+		<option>Point3</option>
+	</select>
+	</form>
+
+
+	<script>
+		/*callcall("Heather kim",18);
+		document.write("<br/>Hello! "+(call()));
+		document.write("<br/>The sum of the two num are: "+(f4(5,6)));*/
+		//for the Java live  clock
+var timerId; // current timer if started
+function clockStart() {
+if (timerId)
+return;
+
+timerId = setInterval(update, 1000);
+update(); // (*)
+
+}
+
+function update() {
+var date = new Date();
+var hours = date.getHours();
+if (hours < 10)
+hours =
+
+'0'+hours;
+
+document.getElementById('hour').innerHTML = hours;
+var minutes = date.getMinutes();
+if (minutes < 10)
+minutes =
+
+'0'+minutes;
+
+document.getElementById('min').innerHTML = minutes;
+var seconds = date.getSeconds();
+if (seconds < 10)
+seconds =
+
+'0'+seconds;
+
+document.getElementById('sec').innerHTML = seconds;
+}
+
+function goodbye(){
+	alert("Goodbye! Have a nice day!!!");
+}
+</script>
+<script language="Javascript">
+	function message(field){
+		window.status="You have placed the cursor in the "+field+" field";
+	}
+</script>
+
+<script type="text/javascript">
+function over()
+{
+	alert("Mouse Over");
+}
+function out()
+{
+	alert("Mouse out");
+}
+</script>
+
+<script>
+	var btn= document.querySelector('button');
+	function random(number){
+		return Math.floor(Math.random() * (number+1));	
+	}
+
+	function changeBgColor(){
+		var rCol='rgb('+random(255)+','+random(255)+','+random(255)+')';
+		document.body.style.backgroundColor=rCol;
+	}
+</script>
+
 	<script src="scripts/my.js">
 	</script>
-</head>
-<body>
-	<button name="Sum" onclick="sumTwo()">SUM</button>
-	<script>
-		callcall("Heather kim",18);
-		document.write("<br/>Hello! "+(call()));
-		document.write("<br/>The sum of the two num are: "+(f4(5,6)));
-	</script>
+
 </body>
 </html>
